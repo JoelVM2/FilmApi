@@ -1,0 +1,182 @@
+[
+  {
+    "Id": 1,
+    "Title": "Inception",
+    "Director": "Christopher Nolan",
+    "Year": 2010,
+    "Genre": "Sci-Fi, Action",
+    "Duration": 148,
+    "Rating": 8.8
+  },
+  {
+    "Id": 2,
+    "Title": "The Godfather",
+    "Director": "Francis Ford Coppola",
+    "Year": 1972,
+    "Genre": "Crime, Drama",
+    "Duration": 175,
+    "Rating": 9.2
+  },
+  {
+    "Id": 3,
+    "Title": "Pulp Fiction",
+    "Director": "Quentin Tarantino",
+    "Year": 1994,
+    "Genre": "Crime, Drama",
+    "Duration": 154,
+    "Rating": 8.9
+  },
+  {
+    "Id": 4,
+    "Title": "The Shawshank Redemption",
+    "Director": "Frank Darabont",
+    "Year": 1994,
+    "Genre": "Drama",
+    "Duration": 142,
+    "Rating": 9.3
+  },
+  {
+    "Id": 5,
+    "Title": "The Dark Knight",
+    "Director": "Christopher Nolan",
+    "Year": 2008,
+    "Genre": "Action, Crime, Drama",
+    "Duration": 152,
+    "Rating": 9.0
+  },
+  {
+    "Id": 6,
+    "Title": "Fight Club",
+    "Director": "David Fincher",
+    "Year": 1999,
+    "Genre": "Drama",
+    "Duration": 139,
+    "Rating": 8.8
+  },
+  {
+    "Id": 7,
+    "Title": "Forrest Gump",
+    "Director": "Robert Zemeckis",
+    "Year": 1994,
+    "Genre": "Drama, Romance",
+    "Duration": 142,
+    "Rating": 8.8
+  },
+  {
+    "Id": 8,
+    "Title": "The Matrix",
+    "Director": "Lana Wachowski, Lilly Wachowski",
+    "Year": 1999,
+    "Genre": "Sci-Fi, Action",
+    "Duration": 136,
+    "Rating": 8.7
+  },
+  {
+    "Id": 9,
+    "Title": "Gladiator",
+    "Director": "Ridley Scott",
+    "Year": 2000,
+    "Genre": "Action, Drama",
+    "Duration": 155,
+    "Rating": 8.5
+  },
+  {
+    "Id": 10,
+    "Title": "Interstellar",
+    "Director": "Christopher Nolan",
+    "Year": 2014,
+    "Genre": "Sci-Fi, Adventure, Drama",
+    "Duration": 169,
+    "Rating": 8.6
+  },
+  {
+    "Id": 11,
+    "Title": "The Lord of the Rings: The Fellowship of the Ring",
+    "Director": "Peter Jackson",
+    "Year": 2001,
+    "Genre": "Adventure, Fantasy",
+    "Duration": 178,
+    "Rating": 8.8
+  },
+  {
+    "Id": 12,
+    "Title": "The Lord of the Rings: The Two Towers",
+    "Director": "Peter Jackson",
+    "Year": 2002,
+    "Genre": "Adventure, Fantasy",
+    "Duration": 179,
+    "Rating": 8.7
+  },
+  {
+    "Id": 13,
+    "Title": "The Lord of the Rings: The Return of the King",
+    "Director": "Peter Jackson",
+    "Year": 2003,
+    "Genre": "Adventure, Fantasy",
+    "Duration": 201,
+    "Rating": 8.9
+  },
+  {
+    "Id": 14,
+    "Title": "The Silence of the Lambs",
+    "Director": "Jonathan Demme",
+    "Year": 1991,
+    "Genre": "Crime, Thriller, Drama",
+    "Duration": 118,
+    "Rating": 8.6
+  },
+  {
+    "Id": 15,
+    "Title": "Saving Private Ryan",
+    "Director": "Steven Spielberg",
+    "Year": 1998,
+    "Genre": "Drama, War",
+    "Duration": 169,
+    "Rating": 8.6
+  },
+  {
+    "Id": 16,
+    "Title": "Jurassic Park",
+    "Director": "Steven Spielberg",
+    "Year": 1993,
+    "Genre": "Adventure, Sci-Fi",
+    "Duration": 127,
+    "Rating": 8.1
+  },
+  {
+    "Id": 17,
+    "Title": "The Lion King",
+    "Director": "Roger Allers, Rob Minkoff",
+    "Year": 1994,
+    "Genre": "Animation, Adventure, Drama",
+    "Duration": 88,
+    "Rating": 8.5
+  },
+  {
+    "Id": 18,
+    "Title": "Titanic",
+    "Director": "James Cameron",
+    "Year": 1997,
+    "Genre": "Drama, Romance",
+    "Duration": 195,
+    "Rating": 7.8
+  },
+  {
+    "Id": 19,
+    "Title": "Avatar",
+    "Director": "James Cameron",
+    "Year": 2009,
+    "Genre": "Action, Adventure, Sci-Fi",
+    "Duration": 162,
+    "Rating": 7.8
+  },
+  {
+    "Id": 20,
+    "Title": "Star Wars: Episode IV - A New Hope",
+    "Director": "George Lucas",
+    "Year": 1977,
+    "Genre": "Action, Adventure, Fantasy",
+    "Duration": 121,
+    "Rating": 8.6
+  }
+]
