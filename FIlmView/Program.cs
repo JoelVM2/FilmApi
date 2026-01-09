@@ -3,7 +3,7 @@ using System;
 using System.Net.Http;
 using System.Threading.Tasks;
 
-namespace CountriesView
+namespace FilmsView
 {
     class Program
     {
@@ -25,7 +25,7 @@ namespace CountriesView
 
         static async Task Main()
         {
-            await WaitApiAsync("http://localhost:5211/Countries");
+            await WaitApiAsync("http://localhost:5124/Film");
             Console.WriteLine("API disponible. Iniciando menú...");
 
             while (true)
@@ -74,12 +74,12 @@ namespace CountriesView
         static void ShowMenu()
         {
             Console.WriteLine("\n--- Menú ---");
-            Console.WriteLine("1. Listar todos los países");
-            Console.WriteLine("2. Buscar país");
-            Console.WriteLine("3. Agregar un país");
-            Console.WriteLine("4. Modificar un país");
-            Console.WriteLine("5. Eliminar un país");
-            Console.WriteLine("6. Concurso de países");
+            Console.WriteLine("1. Listar todas las películas");
+            Console.WriteLine("2. Buscar película");
+            Console.WriteLine("3. Agregar una película");
+            Console.WriteLine("4. Modificar una película");
+            Console.WriteLine("5. Eliminar una película");
+            Console.WriteLine("6. Concurso de películas");
             Console.WriteLine("7. Salir");
             Console.Write("Selecciona una opción: ");
         }

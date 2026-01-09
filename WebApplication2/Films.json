@@ -18,15 +18,6 @@
     "Rating": 9.2
   },
   {
-    "Id": 3,
-    "Title": "Pulp Fiction",
-    "Director": "Quentin Tarantino",
-    "Year": 1994,
-    "Genre": "Crime, Drama",
-    "Duration": 154,
-    "Rating": 8.9
-  },
-  {
     "Id": 4,
     "Title": "The Shawshank Redemption",
     "Director": "Frank Darabont",
@@ -42,7 +33,7 @@
     "Year": 2008,
     "Genre": "Action, Crime, Drama",
     "Duration": 152,
-    "Rating": 9.0
+    "Rating": 9
   },
   {
     "Id": 6,
