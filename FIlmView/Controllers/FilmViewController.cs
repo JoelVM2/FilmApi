@@ -127,52 +127,86 @@ namespace FilmView.Controllers
             var films = await client.GetFromJsonAsync<List<Film>>("Film");
             if (films == null || films.Count == 0)
             {
-                Console.WriteLine("No hay películas disponibles para el quiz.");
+                Console.WriteLine("No hay películas disponibles para el juego.");
                 Console.WriteLine("Presiona Enter para volver al menú...");
                 Console.ReadLine();
                 return;
             }
 
             var rnd = new Random();
-            int correct = 0;
-            int total = 0;
+            int totalPoints = 0;
 
             while (true)
             {
                 Console.Clear();
-                Console.WriteLine("\n--- Concurso de Películas ---");
-                Console.WriteLine("Adivina el director de la película.");
+                Console.WriteLine("\n Adivina la película (por pistas)");
+                Console.WriteLine("Escribe el título en cualquier momento.");
                 Console.WriteLine("Escribe '0' para salir.\n");
 
                 var film = films[rnd.Next(films.Count)];
-                Console.Write($"¿Quén es el director de {film.Title}? ");
-                var answer = Console.ReadLine();
+                int cluesUsed = 0;
+                int points = 5;
 
-                if (answer == "0")
+                while (true)
                 {
-                    Console.Clear();
-                    Console.WriteLine($"Has terminado el quiz. Respuestas correctas: {correct}/{total}");
-                    Console.WriteLine("Presiona Enter para volver al menú...");
-                    Console.ReadLine();
-                    break;
-                }
+                    cluesUsed++;
 
-                total++;
+                    switch (cluesUsed)
+                    {
+                        case 1:
+                            Console.WriteLine($"Pista 1️ Año: {film.Year}");
+                            break;
+                        case 2:
+                            Console.WriteLine($"Pista 2️ Género: {film.Genre}");
+                            points--;
+                            break;
+                        case 3:
+                            Console.WriteLine($"Pista 3️ Director: {film.Director}");
+                            points--;
+                            break;
+                        case 4:
+                            Console.WriteLine($"Pista 4️ Duración: {film.Duration} minutos");
+                            points--;
+                            break;
+                        case 5:
+                            Console.WriteLine($"Pista 5️ Calificación: {film.Rating}");
+                            points--;
+                            break;
+                        default:
+                            Console.WriteLine($"\n Sin más pistas. La película era: {film.Title}");
+                            Console.WriteLine("\nPresiona Enter para continuar...");
+                            Console.ReadLine();
+                            break;
+                    }
 
-                Console.Clear();
-                if (string.Equals(answer.Trim(), film.Director, StringComparison.OrdinalIgnoreCase))
-                {
-                    correct++;
-                    Console.WriteLine($"¡Correcto! El director de {film.Title} es {film.Director}.\n");
-                }
-                else
-                {
-                    Console.WriteLine($"Incorrecto. El director de {film.Title} es {film.Director}.\n");
-                }
+                    if (cluesUsed > 5)
+                        break;
 
-                Console.WriteLine($"Progreso: {correct} correctas de {total} intentos");
-                Console.WriteLine("\nPresiona Enter para continuar a la siguiente película ...");
-                Console.ReadLine();
+                    Console.Write("\n¿Tu respuesta?: ");
+                    var answer = Console.ReadLine();
+
+                    if (answer == "0")
+                    {
+                        Console.Clear();
+                        Console.WriteLine($" Juego terminado. Puntos totales: {totalPoints}");
+                        Console.WriteLine("Presiona Enter para volver al menú...");
+                        Console.ReadLine();
+                        return;
+                    }
+
+                    if (string.Equals(answer?.Trim(), film.Title, StringComparison.OrdinalIgnoreCase))
+                    {
+                        totalPoints += points;
+                        Console.WriteLine($"\n ¡Correcto! Era {film.Title}");
+                        Console.WriteLine($"⭐ Puntos obtenidos: {points}");
+                        Console.WriteLine($" Puntos totales: {totalPoints}");
+                        Console.WriteLine("\nPresiona Enter para la siguiente película...");
+                        Console.ReadLine();
+                        break;
+                    }
+
+                    Console.WriteLine(" Incorrecto... siguiente pista.\n");
+                }
             }
         }
 
