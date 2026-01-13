@@ -11,7 +11,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\FIlmView\FilmView.csproj" />
+    <ProjectReference Include="..\FilmView\FilmView.csproj" />
   </ItemGroup>
 
 </Project>
